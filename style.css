@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+aside {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.modal .text {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  transition: all 5s linear;
+}
+.modal .text #show {
+  transition: all 0.8s ease-in;
+}
+.modal .text section p {
+  font-size: 30px;
+  text-align: end;
+}
+.modal section {
+  height: clamp(200px, 50vh, 500px);
+  width: clamp(200px, 50vw, 600px);
+  background-color: black;
+  border-radius: 20px;
+  padding: 1rem;
+  background: linear-gradient(rgba(8, 0, 26, 0.3), orange);
+  box-shadow: 8px 8px 8px rgba(249, 3, 3, 0.1);
+}
+.modal .name {
+  /* margin-top: 1rem; */
+  align-items: center;
+}
+.modal .name .input-dialogue {
+  margin-bottom: 10px;
+}
+.modal .name .input-dialogue label {
+  font-weight: 600;
+}
+.modal .name .email-sect label {
+  margin-right: 20px;
+}
+.modal .name .input-dialogue input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 75%;
+}
+.modal-btn {
+  text-align: center;
+}
+.modal-btn button {
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background: linear-gradient(orange, rgba(8, 0, 26, 0.3));
+  cursor: pointer;
+}
+.modal-btn button:hover {
+  background: linear-gradient(rgba(8, 0, 26, 0.3), orange);
+}
+/* cookie sect */
+.cookie-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.cookie-container .cookie-sect {
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  transition: all 5s linear;
+}
+.cookie-container .cookie-sect #show {
+  transition: all 5.8s linear;
+}
+.cookie-container .cookie-sect section {
+  margin-bottom: 10px;
+  height: clamp(200px, 10vh, 500px);
+  /* width: clamp(200px, 100vw, 600px); */
+  width: 100%;
+  background-color: black;
+  border-radius: 20px;
+  padding: 1rem;
+  background: linear-gradient(rgba(8, 0, 26, 0.3), orange);
+  box-shadow: 8px 8px 8px rgba(249, 3, 3, 0.1);
+}
+.cookie-container .cookie-btn {
+  text-align: center;
+  margin: 10px;
+}
+
+.cookie-container .cookie-btn button {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+  color: #fff;
+  font-weight: 700;
+  font-style: italic;
+  margin-right: 1rem;
+  background: linear-gradient(rgba(8, 0, 26, 0.3), orange);
+}
+.cookie-container .cookie-btn button:hover {
+  background: linear-gradient(orange, rgba(8, 0, 26, 0.3));
+  transform: scaleX(1.1);
+}
+.cookie-container .cookie-btn .only-n {
+  background: linear-gradient(orange, rgba(8, 0, 26, 0.3));
+}
+.cookie-container .cookie-btn .only-n:hover {
+  background: linear-gradient(rgba(8, 0, 26, 0.3), orange);
+}
+/* nav sect */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  background: #ff6b00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  margin-bottom: 10rem;
+}
+.nav-left-side {
+  display: flex;
+  background: rgb(249, 239, 239);
+  border-radius: 10px;
+  width: 50%;
+}
+.nav-left-side .company-logo img {
+  width: 50px;
+  border-radius: 20px;
+}
+.nav-left-side .company-name h2 span {
+  color: orange;
+}
+.nav-right-side {
+  /* width: 100%; */
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+.nav-right-side .nav-hamburger-sect {
+  width: 20px;
+  display: none;
+}
+.nav-right-side .nav-hamburger-sect div {
+  border: 1.5px solid white;
+  height: 1px;
+  margin-bottom: 5px;
+}
+.nav-right-side .navigational-btn-sect {
+  display: flex;
+  gap: 5px;
+}
+
+.container .nav-account-Dropdown {
+  border: 2px solid red;
+  display: none;
+  padding: 0.1rem;
+  /* background: orange; */
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  width: 100%;
+  margin: auto;
+  margin-top: 1rem;
+}
+.nav-account-Dropdown p {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.nav-account-Dropdown p:hover {
+  background: rgb(138, 133, 133);
+  border: 2px solid red;
+}
+.nav-account-text-signup button {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background: #ff6b00;
+}
+.nav-account-text-signup button:hover {
+  color: #fff;
+  background: linear-gradient(rgb(255, 166, 0), rgb(201, 132, 2));
+}
+.nav-right-side .icon {
+  color: orange;
+  font-size: 20px;
+  margin-right: 4px;
+}
+.nav-right-side #nav-account-name {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  background: rgb(249, 239, 239);
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.nav-right-side .nav-account-name {
+  cursor: pointer;
+}
+.container .below-nav-ad {
+  width: 100%;
+  margin-top: 4rem;
+  background: #000;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+}
+.body .sect-one .left-body-container-image img {
+  width: 25vw;
+  height: 100vh;
+  object-fit: fill;
+}
+.body .sect-two {
+  margin-top: 2rem;
+}
+@media (max-width: 560px) {
+  .modal .name .input-dialogue input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  .modal-btn button {
+    margin: 1px;
+  }
+  .nav-right-side .navigational-btn-sect {
+    display: none;
+  }
+  .nav-right-side .nav-hamburger-sect {
+    display: block;
+  }
+  .body .sect-three {
+    display: none;
+  }
+}
