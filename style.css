@@ -265,6 +265,9 @@ nav {
   .nav-right-side .nav-hamburger-sect {
     display: block;
   }
+  .container .below-nav-ad {
+    margin-top: 3rem;
+  }
   .body .sect-three {
     display: none;
   }
